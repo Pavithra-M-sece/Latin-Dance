@@ -1,0 +1,239 @@
+.class-panel {
+  margin-top: 1rem;
+  padding: 1.25rem;
+}
+
+.table-title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  background: transparent;
+}
+
+.class-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+  table-layout: fixed;
+}
+
+.class-table thead th {
+  text-align: left;
+  padding: 14px 18px;
+  font-weight: 700;
+  color: #4a5568;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #f5ead0 0%, #f0e0c0 100%);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  word-break: break-word;
+}
+
+.class-table th:nth-child(1) { width: 18%; }
+.class-table th:nth-child(2) { width: 12%; }
+.class-table th:nth-child(3) { width: 12%; }
+.class-table th:nth-child(4) { width: 16%; }
+.class-table th:nth-child(5) { width: 12%; }
+.class-table th:nth-child(6) { width: 10%; }
+.class-table th:nth-child(7) { width: 10%; }
+.class-table th:nth-child(8) { width: 10%; }
+
+.class-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.2s;
+}
+
+.class-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.class-table td {
+  padding: 16px 18px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.class-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.class-cell img {
+  width: 44px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.pill-open {
+  background: rgba(100, 255, 150, 0.12);
+  color: #ff6ec7;
+  border: 1px solid rgba(100, 255, 150, 0.4);
+}
+
+.pill-danger {
+  background: rgba(255, 77, 77, 0.15);
+  color: #ffb3b3;
+  border: 1px solid rgba(255, 77, 77, 0.4);
+}
+
+.adjust-btn {
+  padding: 0.45rem 0.85rem;
+  border-radius: 14px;
+  border: 1px solid rgba(100, 255, 150, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e9e9ee;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.adjust-btn:hover {
+  border-color: #ff6ec7;
+  transform: translateY(-1px);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 420px;
+  background: #131318;
+  border: 1px solid #2a2a33;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.modal-card.wide {
+  max-width: 800px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #1f1f26;
+}
+
+.modal-title { font-weight: 700; color: #e9e9ee; }
+.modal-sub { color: #b5b5be; margin-top: 0.15rem; }
+
+.modal-close {
+  background: transparent;
+  border: none;
+  color: #e9e9ee;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 1rem 1.25rem 0.25rem;
+}
+
+.modal-label { display: block; margin-bottom: 0.35rem; color: #d8d8df; }
+.modal-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 14px;
+  border: 1px solid #2a2a33;
+  background: #0f0f13;
+  color: #e9e9ee;
+}
+.modal-input:focus {
+  outline: none;
+  border-color: #ff6ec7;
+  box-shadow: 0 0 0 3px rgba(100, 255, 150, 0.2);
+}
+
+.modal-hint { color: #9e9eaa; font-size: 0.9rem; margin-top: 0.5rem; }
+
+.modal-actions {
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #2a2a33;
+  background: #151519;
+  color: #e9e9ee;
+  cursor: pointer;
+}
+.btn.primary { background: linear-gradient(90deg, #ff6ec7 0%, #6bcf7f 100%); border: none; color: #0f0f10; font-weight: 700; }
+.btn.ghost { background: transparent; }
+
+/* Enrolled Students Modal */
+.students-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.students-list .class-table {
+  margin-top: 0;
+}
+
+.students-list .class-table thead th {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 10;
+}
+
+.students-list .class-table tbody td {
+  text-align: left;
+  padding: 0.85rem;
+}
+
+.pill-success {
+  background: rgba(100, 255, 150, 0.15);
+  color: #6bcf7f;
+  border: 1px solid rgba(100, 255, 150, 0.4);
+  padding: 0.35rem 0.75rem;
+  border-radius: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.pill-waiting {
+  background: rgba(255, 180, 0, 0.15);
+  color: #ffb400;
+  border: 1px solid rgba(255, 180, 0, 0.4);
+  padding: 0.35rem 0.75rem;
+  border-radius: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+@media (max-width: 1100px) {
+  .class-table thead th,
+  .class-table td {
+    white-space: nowrap;
+  }
+}
+
+
+
+
+
+
+

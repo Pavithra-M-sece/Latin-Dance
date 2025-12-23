@@ -1,0 +1,36 @@
+.home{min-height:100vh;background:linear-gradient(135deg,rgba(12,12,17,.85),rgba(12,12,17,.75)),url('/front.jpg') center/cover no-repeat fixed;color:#f5f6f9}
+.home-header{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;position:sticky;top:0;background:linear-gradient(180deg,rgba(12,12,17,.9),rgba(12,12,17,.6),rgba(12,12,17,0));backdrop-filter:saturate(120%) blur(6px);z-index:10}
+.brand{display:flex;align-items:center;gap:.6rem}
+.brand .title{font-weight:700}
+.nav{display:flex;align-items:center;gap:1rem}
+.nav-link{color:#cfcfe1;text-decoration:none}
+.btn-ghost{padding:.6rem 1rem;border:1px solid #2a2a33;border-radius:12px;color:#e8e8f0;text-decoration:none}
+
+.hero{position:relative;min-height:70vh;display:grid;place-items:center;background:radial-gradient(1100px 600px at 10% 10%,rgba(255,122,89,.22),transparent 60%),radial-gradient(1000px 700px at 90% 20%,rgba(140,0,190,.22),transparent 60%),linear-gradient(135deg,#160018 0%,#0c0c11 55%)}
+.hero:before{content:"";position:absolute;inset:0;background:url('/front.jpg') center/cover no-repeat;opacity:.3}
+.hero-content{max-width:900px;padding:2rem;text-align:center}
+.hero h1{font-size:3rem;line-height:1.1;margin-bottom:1rem;background:linear-gradient(90deg,#ffd36d,#ff6ec7 55%,#b38cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#c9c9d2;font-size:1.125rem}
+.cta{display:flex;gap:1rem;justify-content:center;margin-top:1.5rem}
+.btn-primary{background:linear-gradient(90deg,#ff6ec7,#ffb067);color:#121214;text-decoration:none;font-weight:800;padding:.9rem 1.25rem;border-radius:12px;box-shadow:0 10px 24px rgba(255,122,89,.25)}
+.btn-outline{border:1px solid #3a3a44;color:#f0f0f7;text-decoration:none;padding:.9rem 1.25rem;border-radius:12px}
+
+.programs{padding:3rem 2rem}
+.programs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;max-width:1100px;margin:0 auto}
+.card{background:linear-gradient(180deg,#121218,#0e0e14);border:1px solid #2a2a33;border-radius:14px;padding:1.25rem;box-shadow:0 10px 24px rgba(0,0,0,.15)}
+.card h3{margin:0 0 .5rem;color:#ffd36d}
+.card p{color:#c3c3d0}
+
+.home-footer{border-top:1px solid #24242c;padding:1.25rem;text-align:center;color:#9a9aad}
+.home-footer .links{display:flex;gap:.6rem;justify-content:center;align-items:center;margin-bottom:.5rem}
+.home-footer a{color:#d7d7e4;text-decoration:none}
+.home-footer .dot{width:4px;height:4px;background:#d7d7e455;border-radius:50%}
+
+@media (max-width:768px){.hero h1{font-size:2.2rem}}
+
+
+
+
+
+
+
