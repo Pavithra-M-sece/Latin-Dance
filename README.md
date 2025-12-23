@@ -436,3 +436,8 @@ This project is provided as-is for educational purposes.
 6. Check [VERIFICATION_CHECKLIST.md](VERIFICATION_CHECKLIST.md) for detailed testing
 
 **Happy coding! 🎉**
+<<<<<<< HEAD
+=======
+
+# Latin-Dance
+>>>>>>> e499e77 (This is the complete code for the project)
