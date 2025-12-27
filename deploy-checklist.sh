@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Quick Deployment Checklist for Render
+echo "🚀 Latin Dance Management System - Render Deployment Checklist"
+echo "=============================================================="
+
+echo ""
+echo "📋 Pre-deployment Checklist:"
+echo "✅ MongoDB Atlas cluster created"
+echo "✅ Database user with read/write permissions created"
+echo "✅ IP whitelist set to 0.0.0.0/0"
+echo "✅ Connection string obtained"
+echo "✅ Render account created"
+echo "✅ Code pushed to GitHub repository"
+
+echo ""
+echo "🔧 Files Created for Deployment:"
+echo "✅ BACKEND/render.yaml - Backend service configuration"
+echo "✅ BACKEND/Dockerfile - Container configuration"
+echo "✅ BACKEND/.dockerignore - Docker ignore rules"
+echo "✅ BACKEND/.env.example - Environment variables template"
+echo "✅ FRONTEND/render.yaml - Frontend service configuration"
+echo "✅ FRONTEND/public/_redirects - SPA routing support"
+echo "✅ FRONTEND/.env.example - Frontend environment template"
+echo "✅ RENDER_DEPLOYMENT.md - Complete deployment guide"
+
+echo ""
+echo "🌐 Deployment Steps:"
+echo "1. Deploy Backend:"
+echo "   - Create Web Service on Render"
+echo "   - Connect GitHub repo, select BACKEND folder"
+echo "   - Set environment variables from .env.example"
+echo "   - Deploy and note the backend URL"
+
+echo ""
+echo "2. Deploy Frontend:"
+echo "   - Create Static Site on Render"
+echo "   - Connect GitHub repo, select FRONTEND folder"
+echo "   - Set VITE_API_URL to backend URL"
+echo "   - Deploy and note the frontend URL"
+
+echo ""
+echo "3. Update CORS:"
+echo "   - Update backend CORS_ORIGIN to frontend URL"
+echo "   - Redeploy backend service"
+
+echo ""
+echo "🔍 Post-deployment Verification:"
+echo "- Test backend health: curl https://your-backend.onrender.com/api/health"
+echo "- Test frontend: Open https://your-frontend.onrender.com"
+echo "- Test registration and login flow"
+echo "- Verify database connections"
+
+echo ""
+echo "📚 Documentation:"
+echo "- Read RENDER_DEPLOYMENT.md for detailed instructions"
+echo "- Keep .env.example files for reference"
+echo "- Monitor Render dashboard for logs and metrics"
+
+echo ""
+echo "🎉 Ready for deployment! Follow RENDER_DEPLOYMENT.md for step-by-step instructions."
